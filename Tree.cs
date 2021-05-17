@@ -78,6 +78,23 @@ namespace TreeDataStructure
             return found;
         }
 
-     
+        public void printAll ()
+        {
+             Node current = root;
+            if (current == null)
+                return;
+            Console.WriteLine(current.num);
+            RepeatPrint(current.left);
+            RepeatPrint(current.right);
+        }
+        public void RepeatPrint(Node current)
+        {
+            
+            if (current == null)
+                return;
+            Console.WriteLine(current.num);
+            RepeatPrint(current.left);
+            RepeatPrint(current.right);
+        }
     }
 }

@@ -25,6 +25,8 @@ namespace TreeDataStructure
             Console.WriteLine(myTree.find(7));
             Console.WriteLine(myTree.find(8));
             Console.WriteLine(myTree.find(0));
+
+            myTree.printAll();
         }
     }
 }
